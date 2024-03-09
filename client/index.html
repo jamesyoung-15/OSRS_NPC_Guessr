@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>OSRS Guessr</title>
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="https://kit.fontawesome.com/2e277278ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="nav-logo">
+                <a href="#" class="nav-link"><h2 class="main-title"><i class="fa-solid fa-location-dot"></i> OSRS NPC Guessr</h2><h2 class="hidden-title"><i class="fa-solid fa-location-crosshairs"></i></h2></a>
+            </div>
+            <div class="nav-items">
+                <ul class="nav-list">
+                    <li>
+                        <a target="_blank" href="#" class="nav-link">Play <i class="fa-solid fa-gamepad"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="#" class="nav-link">Login <i class="fa-solid fa-right-to-bracket"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="" class="nav-link">About <i class="fa-solid fa-circle-info"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="gameRegion">
+            <div class="gameScore">
+                <h2>Score:  <span id="score">0</span></h2>
+                <h2>Round: <span id="round">1</span>/5</h2>
+            </div>
+            <div class="gameCanvas">
+                <div class="osrsMap" id="map"></div>
+                <div class="osrsNpc">
+                    <img src="../assets/turael.png" alt="" srcset="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        
+    </footer>
+
+    <script src="./map.js"></script>
+    <script src="navbar.js"></script>
+</body>
+</html>

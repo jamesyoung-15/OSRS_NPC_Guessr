@@ -1,0 +1,7 @@
+services:
+  client:
+    image: nginx
+    ports:
+      - "4020:80"
+    volumes:
+      - ./client:/usr/share/nginx/html
