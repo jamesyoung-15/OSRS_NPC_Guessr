@@ -24,13 +24,14 @@
             <div class="nav-items">
                 <ul class="nav-list">
                     <li>
-                        <a target="_blank" href="#" class="nav-link">Play <i class="fa-solid fa-gamepad"></i></a>
+                        <a href="#" class="nav-link">Play <i class="fa-solid fa-gamepad"></i></a>
                     </li>
                     <li>
-                        <a target="_blank" href="#" class="nav-link">Login <i class="fa-solid fa-right-to-bracket"></i></a>
+                        <a href="#" class="nav-link">Login <i class="fa-solid fa-right-to-bracket"></i></a>
                     </li>
                     <li>
-                        <a target="_blank" href="" class="nav-link">About <i class="fa-solid fa-circle-info"></i></a>
+                        <a target="_blank" href="https://github.com/jamesyoung-15/OSRS_NPC_Guessr" 
+                        class="nav-link">About <i class="fa-solid fa-circle-info"></i></a>
                     </li>
                 </ul>
             </div>
@@ -48,18 +49,24 @@
                 <h2>Round: <span id="round">1</span>/5</h2>
             </div>
             <div class="gameCanvas">
-                <div class="osrsMap" id="map"></div>
+                <!-- <div class="osrsMap" id="map"></div> -->
                 <div class="osrsNpc">
                     <img src="../assets/turael.png" alt="" srcset="">
                 </div>
             </div>
+            <div class="osrsMap" id="map"></div>
+            <form action="" class="userGuess">
+                <label for="npcNameInput">NPC Name</label>
+                <input type="text" name="npcNameInput" id="npcNameInput" class="input npcNameInput">
+                <input type="submit" value="Submit" class="button userGuessSubmit">
+            </form>
         </section>
     </main>
     <footer class="footer">
         
     </footer>
 
-    <script src="./map.js"></script>
-    <script src="navbar.js"></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/navbar.js"></script>
 </body>
 </html>
